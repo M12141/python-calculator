@@ -1,6 +1,6 @@
 import tkinter as tk
 
-# Creating a window
+##Creating a window
 
 window = tk.Tk() ##Creates the calculator window
 window.title("Calculator")
