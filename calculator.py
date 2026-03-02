@@ -41,6 +41,13 @@ buttons = [
     ('0',4,0), ('.',4,1), ('=',4,2), ('+',4,3),
 ]
 
+#Creates buttons
+for (text,row,col) in buttons:
+    if text =="=":
+        tk.Button(window, text=text, width = 5, height=2, command = equal).grid(row=row, column=col)
+    else:
+        tk.Button(window, text=text, width =5, height = 2, command = lambda t =text: click(t)).grid(row=row, column=col)
+
 
 
 
