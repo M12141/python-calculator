@@ -49,6 +49,10 @@ for (text,row,col) in buttons:
         tk.Button(window, text=text, width =5, height = 2, command = lambda t =text: click(t)).grid(row=row, column=col)
 
 
+#Clear button
+tk.Button(window, text = "C", width = 22, height = 2, command = clear).grid(row = 5, column = 0, columnspan = 4)
+window.mainloop()
+
 
 
 
