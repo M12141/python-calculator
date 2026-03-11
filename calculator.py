@@ -16,8 +16,7 @@ entry.grid(row=0, column=0, padx=10, columnspan=4) ## Places the screen at row 0
 #Function when button is pressed
 def click(num):
     ##Insert number/operator at the end of the current text
-    entry.delete(0, tk.END)
-    entry.insert(0, num) #Adds number/operator to the screen
+    entry.insert(tk.END, num) #Adds number/operator to the screen
 
 #Clears the display on the calculator when C button is pressed
 def clear():
